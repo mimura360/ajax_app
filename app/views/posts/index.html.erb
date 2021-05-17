@@ -4,6 +4,9 @@
   <%= form.submit '投稿する' , id: "submit" %>
   <% end %>
 
+<div id="list">
+</div>
+
 <% @posts.each do |post| %>
     <div class="post" date-id=<%= post.id %>> date-check=<%= post.checked %>
     <div class="post-date">
